@@ -1,0 +1,19 @@
+export default {
+  getActivityList:'/backend/admin/activity/pageList',
+  addFullReturnRow:'/backend/admin/activity/create',
+  detialFullReturn:'/backend/admin/activity/info',
+  changeRowStatus:'/backend/admin/activity/reverseUpStatus',
+  delRow:'/backend/admin/activity/delete',
+  addFullReductionCoupons:'/backend/admin/activity/addFullReductionCoupons',
+  removeFullReductionCoupons:'/backend/admin/activity/removeFullReductionCoupons',
+  activityEdit:'/backend/admin/activity/edit',
+  addNewuserCoupons:'/backend/admin/activity/addNewUserCoupons',
+  delNewuserCoupons:'/backend/admin/activity/removeNewUserCoupons',
+  addRuleCoupons:'/backend/admin/activity/addRuleCoupons',
+  delRuleCoupons:'/backend/admin/activity/removeRule',
+  addAdvertising:'/backend/admin/advertising/create',
+  getAdvertisingList:'/backend/admin/advertising/pageList',
+  switchAddStatus:'/backend/admin/advertising/reverseUpStatus',
+  deleteAdvertising:'/backend/admin/advertising/remove',
+  editAdvertising:'/backend/admin/advertising/edit'
+}

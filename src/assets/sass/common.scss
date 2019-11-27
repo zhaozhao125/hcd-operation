@@ -1,0 +1,627 @@
+@import './global.scss';
+.page-left div {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+  }
+  ::-webkit-scrollbar-thumb {
+    // background-color: #06d995;
+    //background-color:#36c5af;
+    background-color: rgba(
+      174,
+      174,
+      174,
+      20%
+    ); //background-image: -webkit-gradient(linear,  40% 0%,  75% 84%,  from(#13a27f),  to(#06cd8d),  color-stop(.6, #54DE5D));
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    &:hover {
+      background-color: darken(#aeaeae, 10%);
+    }
+  }
+}
+
+.table-info {
+  span {
+    display: block;
+  }
+}
+
+.table-box {
+  .table-operator {
+    margin-bottom: 10px;
+  }
+  .table-container {
+    .table-button {
+      .el-dropdown {
+        margin-left: $table-btn-margin;
+        .el-dropdown-link {
+          cursor: pointer;
+          color: $color-blue;
+        }
+      }
+    }
+  }
+  .table-page {
+    margin-top: $size-padding;
+    .el-pagination {
+      float: right;
+    }
+  }
+  .cell {
+    .el-button--text {
+      margin-left: 0;
+      margin-right: $table-btn-margin;
+    }
+    .el-dropdown {
+      margin-right: $table-btn-margin;
+    }
+  }
+}
+
+.viewer-container {
+  z-index: 3000 !important;
+}
+
+.el-form-item.right-button {
+  text-align: right;
+}
+
+.list-page {
+  padding: 0 15px 05px 15px;
+} //   .space-between {
+//       padding-bottom: 18px;
+//       padding-top: 10px;
+//   }
+.float-right {
+  float: right;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.components-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.el-switch {
+  font-size: 0;
+  outline: none;
+}
+
+// 地图信息窗体信息
+.infowindow-panel {
+  .panel-header {
+    border-bottom: 1px solid $color-border;
+    padding-bottom: 6px;
+    h3 {
+      font-size: 16px;
+    }
+  }
+  .panel-content {
+    padding: 6px 0;
+    font-size: 14px;
+    li {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5px;
+      span.panel-key {
+        width: 120px;
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+        margin-right: 5px;
+        color: $color-detail;
+      }
+      span.panel-value {
+        flex: 1;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// 表格操作确认弹出popover
+.el-popover {
+  > p {
+    margin-bottom: 8px;
+  }
+}
+.panel-content {
+  padding: 6px 0;
+  font-size: 14px;
+  li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    span.panel-key {
+      width: 100px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 5px;
+      color: $color-detail;
+    }
+    span.panel-value {
+      flex: 1;
+      display: inline-block;
+    }
+  }
+}
+
+.el-dialog__body{
+  .form-section:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mg-0 {
+  margin: 0px;
+}
+
+.mg-5 {
+  margin: 5px;
+}
+
+.mg-10 {
+  margin: 10px;
+}
+
+.mg-15 {
+  margin: 15px;
+}
+
+.mg-20 {
+  margin: 20px;
+}
+
+.mg-25 {
+  margin: 25px;
+}
+
+.mg-30 {
+  margin: 30px;
+}
+
+/* padding */
+.pd-0 {
+  padding: 0px;
+}
+
+.pd-5 {
+  padding: 5px;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+.pd-15 {
+  padding: 15px;
+}
+
+.pd-20 {
+  padding: 20px;
+}
+
+.pd-25 {
+  padding: 25px;
+}
+
+.pd-30 {
+  padding: 30px;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pl-25 {
+  padding-left: 25px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pr-25 {
+  padding-right: 25px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+/* float */
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
+
+/* clear */
+.cl-l {
+  clear: left;
+}
+
+.cl-r {
+  clear: right;
+}
+
+.cl-b {
+  clear: both;
+}
+
+/* text-align */
+.ta-c {
+  text-align: center;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+/* font-size */
+.fsz-12 {
+  font-size: 12px;
+}
+
+.fsz-13 {
+  font-size: 13px;
+}
+
+.fsz-15 {
+  font-size: 15px;
+}
+
+.fsz-18 {
+  font-size: 18px;
+}
+
+.fsz-20 {
+  font-size: 20px;
+}
+
+.fsz-22 {
+  font-size: 22px;
+}
+
+.fsz-25 {
+  font-size: 25px;
+}
+
+/* font-style */
+.fst-n {
+  font-style: normal;
+}
+
+.fst-i {
+  font-style: italic;
+}
+
+/* font-weight */
+.fw-b {
+  font-weight: bold;
+}
+
+.fw-n {
+  font-weight: normal;
+}
+
+/* display */
+.dp-n {
+  display: none;
+}
+
+.dp-b {
+  display: block;
+}
+
+.dp-ib {
+  display: inline-block;
+}
+
+.dp-i {
+  display: inline;
+}
+
+/* overflow */
+.of-h {
+  overflow: hidden;
+}
+
+.of-a {
+  overflow: auto;
+}
+
+.of-s {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.of-y-s {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+.of-x-s {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+}
+
+/* position */
+.pos-a {
+  position: absolute;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.pos-s {
+  position: static;
+}
+
+.pos-f {
+  position: fixed;
+}
+
+/* transition */
+.ts-02 {
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+}
+
+.ts-05 {
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+.ts-08 {
+  transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+}
+
+.ts-1 {
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+}
